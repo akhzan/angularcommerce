@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bar {
+    width: 80%;
+    height: 50px;
+}
+
+.search-bar {
+    margin-top: 50px;
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+
+    .search {
+        background-color: gray;
+    }
+}
+
+.header-bar {
+    background-color: yellowgreen;
+}
