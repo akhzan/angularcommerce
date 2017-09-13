@@ -1,26 +1,50 @@
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
 .bar {
-    width: 80%;
-    height: 50px;
+    width: 70%;
 }
 
-.search-bar {
+.logo-bar {
     margin-top: 50px;
-    background-color: yellow;
+    height: 50px;
     display: flex;
     justify-content: space-between;
+}
 
-    .search {
-        background-color: gray;
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .mat-input-container {
+        margin-left: 20px;
     }
 }
 
+.user {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .header-bar {
-    background-color: yellowgreen;
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            display: inline;
+        }
+    }
+}
+
+.nav-primary li {
+    margin-right: 15px;
+}
+
+.nav-secondary li {
+    margin-left: 15px;
+    background-color: red;
+    color: white;
+    padding: 2px;
 }

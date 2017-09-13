@@ -1,11 +1,31 @@
 <div class="container">
-  <div class="search-bar bar">
-    <div class="search">
-      <input mdInput placeholder="Favorite food" />
+  <div class="logo-bar bar">
+    <div class="logo">
+      <div>LOGO</div>
+      <md-form-field>
+        <input mdInput placeholder="Search" />
+      </md-form-field>
     </div>
     <div class="user">
+      <span>{{message}}</span>
       User
     </div>
   </div>
-  <div class="header-bar bar"></div>
+  <div class="header-bar bar">
+    <div class="nav-primary">
+      <ul>
+        <li><a routerLink="/newest">TERBARU</a></li>
+        <li><a>POPULER</a></li>
+        <li><a>KAOS</a></li>
+        <li><a>KEMEJA</a></li>
+        <li><a>AKSESORIS</a></li>
+      </ul>
+    </div>
+    <div class="nav-secondary">
+      <ul>
+        <li><a>DISKON</a></li>
+        <li><a>EDISI TERBATAS</a></li>
+      </ul>
+    </div>
+  </div>
 </div>
