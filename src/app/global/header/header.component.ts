@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../views/cart/cart.service';
+import { Cart } from '../../views/cart/cart';
 
 @Component({
   selector: 'app-header',
@@ -7,14 +8,11 @@ import { CartService } from '../../views/cart/cart.service';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent implements OnInit {
-  message:string;  
+  carts:Cart[]  
   constructor(private data: CartService) { }
 
   ngOnInit() {
-    this.data.currentMessage.subscribe(message => {
-      console.log(message)
-      this.message = message
-    }, error => console.log('ERROR: ' +error))
+    this.data.carts.subscribe(carts => this.carts = carts)
   }
 
 }

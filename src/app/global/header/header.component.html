@@ -7,8 +7,13 @@
       </md-form-field>
     </div>
     <div class="user">
-      <span>{{message}}</span>
-      User
+      <div class="cart">
+        <div class="cart-number" *ngIf="carts.length > 0">{{carts.length}}</div>
+        <md-icon>shopping_basket</md-icon>
+      </div>
+      <div>
+        <md-icon>person</md-icon>
+      </div>
     </div>
   </div>
   <div class="header-bar bar">
@@ -18,6 +23,7 @@
         <li><a>POPULER</a></li>
         <li><a>KAOS</a></li>
         <li><a>KEMEJA</a></li>
+        <li><a>JAKET</a></li>
         <li><a>AKSESORIS</a></li>
       </ul>
     </div>

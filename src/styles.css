@@ -18,3 +18,7 @@ body {
 .container-limiter {
     width: 70%;
 }
+
+md-icon {
+    font-size: 1.6em !important;
+}

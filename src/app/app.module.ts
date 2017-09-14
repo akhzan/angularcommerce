@@ -13,6 +13,7 @@ import { NewestComponent } from './views/newest/newest.component';
 import { CartComponent } from './views/cart/cart.component';
 
 import { CartService } from './views/cart/cart.service';
+import { MdIconRegistry } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,10 @@ import { CartService } from './views/cart/cart.service';
       { path: 'newest', component: NewestComponent }
     ])
   ],
-  providers: [CartService],
+  providers: [
+    CartService,
+    MdIconRegistry
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
