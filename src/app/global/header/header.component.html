@@ -9,52 +9,52 @@
     <div class="user">
       <div class="cart">
         <div class="cart-number" *ngIf="carts.length > 0">{{carts.length}}</div>
-        <md-icon>shopping_basket</md-icon>
+        <md-icon (mouseover)="openMinicart()">shopping_basket</md-icon>
         <div class="minicart-pop">
           <md-card>
             <div class="minicart-title">TAS BELANJA</div>
             <div class="minicart-content">
-              <div class="minicart-product">
+              <div *ngFor="let cart of carts" class="minicart-product">
                 <img src={{imgDummy}} />
                 <div class="minicart-data-main">
-                  <div class="minicart-data-brand">Brekele</div>
-                  <div>Summer Top Bahamas</div>
+                  <div class="minicart-data-brand">{{cart.brand}}</div>
+                  <div>{{cart.name}}</div>
                   <div class="minicart-data-size">Ukuran: L</div>
                   <div class="minicart-data-quantity">Jumlah: 2</div>
                 </div>
                 <div class="minicart-data-additional">
                   <div>Rp. 249.000</div>
                 </div>
+              </div>
             </div>
+            <div class="minicart-action">
+              <button md-button>Lihat</button>
+              <button md-button>Bayar</button>
+            </div>
+          </md-card>
         </div>
-        <div class="minicart-action">
-          <button md-button>Lihat</button>
-          <button md-button>Bayar</button>
-        </div>
-        </md-card>
+      </div>
+      <div>
+        <md-icon>person</md-icon>
       </div>
     </div>
-    <div>
-      <md-icon>person</md-icon>
+  </div>
+  <div class="header-bar bar">
+    <div class="nav-primary">
+      <ul>
+        <li><a routerLink="/newest">TERBARU</a></li>
+        <li><a>POPULER</a></li>
+        <li><a>KAOS</a></li>
+        <li><a>KEMEJA</a></li>
+        <li><a>JAKET</a></li>
+        <li><a>AKSESORIS</a></li>
+      </ul>
+    </div>
+    <div class="nav-secondary">
+      <ul>
+        <li><a>DISKON</a></li>
+        <li><a>EDISI TERBATAS</a></li>
+      </ul>
     </div>
   </div>
-</div>
-<div class="header-bar bar">
-  <div class="nav-primary">
-    <ul>
-      <li><a routerLink="/newest">TERBARU</a></li>
-      <li><a>POPULER</a></li>
-      <li><a>KAOS</a></li>
-      <li><a>KEMEJA</a></li>
-      <li><a>JAKET</a></li>
-      <li><a>AKSESORIS</a></li>
-    </ul>
-  </div>
-  <div class="nav-secondary">
-    <ul>
-      <li><a>DISKON</a></li>
-      <li><a>EDISI TERBATAS</a></li>
-    </ul>
-  </div>
-</div>
 </div>

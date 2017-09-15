@@ -17,4 +17,8 @@ export class HeaderComponent implements OnInit {
     this.imgDummy = 'https://dynamic.zacdn.com/zSz5VjV6G96Hh-MQVZ6oloVIaj8=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/lois-jeans-9768-7348931-4.jpg'
   }
 
+  openMinicart() {
+    console.log('ntaps')
+  }
+
 }
