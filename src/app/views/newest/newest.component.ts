@@ -8,19 +8,10 @@ import { Cart } from '../../views/cart/cart';
   styleUrls: ['./newest.component.scss'],
 })
 export class NewestComponent implements OnInit {
-  arg=0
-  carts:Cart[]
-  cart: Cart;
-
-  add = () => {
-    this.cart = {id:1}
-    this.arg++
-    this.data.pushCart(this.cart)
-  }
   constructor(private data: CartService) { }
 
   ngOnInit() {
-    this.data.carts.subscribe(carts => this.carts = carts)
+
   }
 
 }

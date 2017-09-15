@@ -1,0 +1,40 @@
+.product-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product {
+    width: 100%;
+    img {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+
+.product-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.product-title {
+    text-align: left;
+}
+
+.product-price {
+    padding-top: 5px;
+}
+
+.product-brand {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-buy {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}

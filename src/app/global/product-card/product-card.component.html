@@ -1,0 +1,15 @@
+<div class="product-card">
+  <div class="product">
+    <img src="https://dynamic.zacdn.com/zSz5VjV6G96Hh-MQVZ6oloVIaj8=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/lois-jeans-9768-7348931-4.jpg"/>
+  </div>
+  <div class="product-data">
+    <div class="product-title">
+      <div class="product-brand">{{cart.brand}}</div>
+      <div class="product-desc">{{cart.name}}</div>
+    </div>
+    <div>
+      <button class="small-button" md-raised-button (click)="addToCart(cart)">Beli</button>
+      <div class="product-price">{{cart.price}}</div>
+    </div>
+  </div>
+</div>

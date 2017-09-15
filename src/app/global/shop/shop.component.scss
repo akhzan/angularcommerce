@@ -1,5 +1,11 @@
-.product {
-    height: 250px;
-    width: 250px;
-    background-color: gray;
+.shop {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    * {
+        width: calc(100% / 3 - 20px);
+        padding: 10px;
+    }
 }

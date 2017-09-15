@@ -14,6 +14,7 @@ import { CartComponent } from './views/cart/cart.component';
 
 import { CartService } from './views/cart/cart.service';
 import { MdIconRegistry } from '@angular/material';
+import { ProductCardComponent } from './global/product-card/product-card.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MdIconRegistry } from '@angular/material';
     HomeComponent,
     ShopComponent,
     NewestComponent,
-    CartComponent
+    CartComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule,

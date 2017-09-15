@@ -63,3 +63,66 @@
     color: white;
     padding: 2px;
 }
+
+.minicart-pop {
+    width: 300px;
+    position: absolute;
+    margin-top: 20px;
+}
+
+md-card {
+    padding: 0;
+}
+
+.minicart-title {
+    padding: 10px;
+    background-color: orange;
+}
+
+.minicart-content {
+    padding: 15px;
+}
+
+.minicart-product {
+    display: flex;
+    justify-content: center;
+    img {
+        width: 20%;
+        height: 100%;
+    }
+
+    .minicart-data-main {
+        text-align: left;
+        padding: 0 6px;
+        width: 50%;
+
+        .minicart-data-brand {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+
+        .minicart-data-size, .minicart-data-quantity {
+            color: gray;
+        }
+
+        .minicart-data-size {
+            padding-top: 5px;
+        }
+    }
+
+    .minicart-data-additional {
+        width: 30%;
+        text-align: right;
+    }
+}
+
+.minicart-action {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    button {
+        width: 48%;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+}

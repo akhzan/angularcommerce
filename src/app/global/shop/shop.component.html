@@ -1,6 +1,7 @@
 <div class="container">
   <div class="container-limiter">
-    <div class="product"></div>
-    <div><button md-raised-button>Beli{{arg}}</button></div>
+    <div class="shop">
+      <app-product-card *ngFor="let cart of carts" [cart]=cart></app-product-card>
+    </div>
   </div>
 </div>
