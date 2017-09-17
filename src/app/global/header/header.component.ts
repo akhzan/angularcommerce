@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../views/cart/cart.service';
 import { Cart } from '../../views/cart/cart';
+import { MdSnackBar } from '@angular/material';
 
 @Component({
   selector: 'app-header',
@@ -10,15 +11,26 @@ import { Cart } from '../../views/cart/cart';
 export class HeaderComponent implements OnInit {
   carts:Cart[]  
   imgDummy:string
-  constructor(private data: CartService) { }
+  isCartOpen:boolean = false
+  constructor(private data: CartService, public snackBar: MdSnackBar) { }
 
   ngOnInit() {
-    this.data.carts.subscribe(carts => this.carts = carts)
+    this.data.carts.subscribe(carts => {
+      carts.length > 0 ?
+        this.snackBar.open('ntaps', '', {
+          duration: 500
+        }) : null
+      this.carts = carts
+    })
     this.imgDummy = 'https://dynamic.zacdn.com/zSz5VjV6G96Hh-MQVZ6oloVIaj8=/fit-in/346x500/filters:quality(90):fill(ffffff)/http://static.id.zalora.net/p/lois-jeans-9768-7348931-4.jpg'
   }
 
   openMinicart() {
-    console.log('ntaps')
+    this.isCartOpen = true
+  }
+
+  closeMinicart() {
+    this.isCartOpen = false
   }
 
 }

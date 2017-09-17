@@ -68,6 +68,11 @@
     width: 300px;
     position: absolute;
     margin-top: 20px;
+    display: none;
+
+    &.isOpen {
+        display: block !important;
+    }
 }
 
 md-card {

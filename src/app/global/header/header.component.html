@@ -10,7 +10,7 @@
       <div class="cart">
         <div class="cart-number" *ngIf="carts.length > 0">{{carts.length}}</div>
         <md-icon (mouseover)="openMinicart()">shopping_basket</md-icon>
-        <div class="minicart-pop">
+        <div class="minicart-pop" [ngClass]={isOpen:isCartOpen} (mouseleave)="closeMinicart()">
           <md-card>
             <div class="minicart-title">TAS BELANJA</div>
             <div class="minicart-content">
