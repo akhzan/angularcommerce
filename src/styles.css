@@ -38,3 +38,16 @@ button {
     width: 50px !important;
     min-width: 50px !important;
 }
+
+.cdk-global-overlay-wrapper {
+    justify-content: flex-start !important;
+}
+
+.snackbar-extra {
+    margin: 10px;
+    font-weight: 300;
+}
+
+.snackbar-extra button {
+    color: orange;
+}

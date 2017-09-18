@@ -17,8 +17,9 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.data.carts.subscribe(carts => {
       carts.length > 0 ?
-        this.snackBar.open('ntaps', '', {
-          duration: 500
+        this.snackBar.open('Ditambahkan ke Tas : ', carts[carts.length - 1].name, {
+          duration: 800,
+          extraClasses: ['snackbar-extra']
         }) : null
       this.carts = carts
     })

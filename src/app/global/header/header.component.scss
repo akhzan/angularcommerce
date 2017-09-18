@@ -69,6 +69,7 @@
     position: absolute;
     margin-top: 20px;
     display: none;
+    z-index: 100;
 
     &.isOpen {
         display: block !important;
@@ -151,3 +152,4 @@ md-card {
         border: 1px solid rgba(0,0,0,0.1);
     }
 }
+
