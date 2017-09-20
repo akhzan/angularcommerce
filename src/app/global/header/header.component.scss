@@ -1,3 +1,5 @@
+@import './../../app.component.scss';
+
 .bar {
     width: 70%;
 }
@@ -48,20 +50,29 @@
     height: 18px;
     width: 18px;
     border-radius: 50%;
-    background-color: orangered;
+    background-color: $secondary-color;
     font-weight: bold;
     color: white;
 }
 
 .nav-primary li {
     margin-right: 15px;
+
+    a {
+        color: initial;
+        text-decoration: none;
+    }
 }
 
 .nav-secondary li {
     margin-left: 15px;
-    background-color: orange;
+    background-color: $primary-color;
     color: white;
     padding: 2px;
+
+    a {
+        text-decoration: none;
+    }
 }
 
 .minicart-pop {
@@ -82,7 +93,7 @@ md-card {
 
 .minicart-title {
     padding: 10px;
-    background-color: orange;
+    background-color: $primary-color;
 }
 
 .minicart-content {

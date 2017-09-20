@@ -14,6 +14,7 @@
           <md-card>
             <div class="minicart-title">TAS BELANJA</div>
             <div class="minicart-content">
+              <div [hidden]="carts.length > 0">Kosong</div>
               <div *ngFor="let cart of carts" class="minicart-product">
                 <img src={{imgDummy}} />
                 <div class="minicart-data-main">
@@ -28,8 +29,8 @@
               </div>
             </div>
             <div class="minicart-action">
-              <button md-button>Lihat</button>
-              <button md-button>Bayar</button>
+              <button [disabled]="carts.length <= 0" md-button>Lihat</button>
+              <button [disabled]="carts.length <= 0" md-button>Bayar</button>
             </div>
           </md-card>
         </div>
@@ -43,11 +44,11 @@
     <div class="nav-primary">
       <ul>
         <li><a routerLink="/newest">TERBARU</a></li>
-        <li><a>POPULER</a></li>
-        <li><a>KAOS</a></li>
-        <li><a>KEMEJA</a></li>
-        <li><a>JAKET</a></li>
-        <li><a>AKSESORIS</a></li>
+        <li><a routerLink="/">POPULER</a></li>
+        <li><a routerLink="/">KAOS</a></li>
+        <li><a routerLink="/">KEMEJA</a></li>
+        <li><a routerLink="/">JAKET</a></li>
+        <li><a routerLink="/">AKSESORIS</a></li>
       </ul>
     </div>
     <div class="nav-secondary">
