@@ -35,7 +35,14 @@ import { ProductCardComponent } from './global/product-card/product-card.compone
       { path: '', redirectTo: '/h', pathMatch: 'full' },
       { path: 'h', component: HomeComponent },
       { path: 'shop', component: ShopComponent },
-      { path: 'newest', component: NewestComponent }
+      { path: 'newest', component: NewestComponent },
+      { path: 'popular', component: NewestComponent },
+      { path: 'tee', component: NewestComponent },
+      { path: 'shirt', component: NewestComponent },
+      { path: 'jacket', component: NewestComponent },
+      { path: 'acc', component: NewestComponent },
+      { path: 'discount', component: NewestComponent },
+      { path: 'limited', component: NewestComponent }
     ])
   ],
   providers: [
