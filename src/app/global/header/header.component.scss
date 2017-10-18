@@ -2,6 +2,10 @@
 
 .bar {
     width: 70%;
+    @include respond-to(small) { 
+        width: 90%;
+        margin-bottom: 5px;
+	}
 }
 
 .logo-bar {
@@ -15,8 +19,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include respond-to(small) { 
+        justify-content: flex-start;
+    }
     .mat-input-container {
         margin-left: 20px;
+        @include respond-to(small) { 
+            margin-left: 5px;
+            max-width: 70%;
+        }
     }
 }
 
@@ -29,10 +40,17 @@
 .header-bar {
     display: flex;
     justify-content: space-between;
+    @include respond-to(small) { 
+		flex-direction: column;
+	}
 
     ul {
         list-style-type: none;
         padding: 0;
+        @include respond-to(small) { 
+            display: flex;
+            margin: 5px 0;
+        }
 
         li {
             display: inline;
@@ -69,6 +87,9 @@
     background-color: $primary-color;
     color: white;
     padding: 2px;
+    @include respond-to(small) { 
+        margin: 0px 15px 0px 0px;
+	}
 
     a {
         color: white;

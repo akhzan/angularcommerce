@@ -32,8 +32,8 @@ import { ProductCardComponent } from './global/product-card/product-card.compone
     BrowserAnimationsModule,
     MaterialModule,
     RouterModule.forRoot([
-      { path: '', redirectTo: '/h', pathMatch: 'full' },
-      { path: 'h', component: HomeComponent },
+      { path: '', redirectTo: '/', pathMatch: 'full' },
+      { path: '', component: HomeComponent },
       { path: 'shop', component: ShopComponent },
       { path: 'newest', component: NewestComponent },
       { path: 'popular', component: NewestComponent },
