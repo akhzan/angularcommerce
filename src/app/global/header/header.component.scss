@@ -26,7 +26,7 @@
         margin-left: 20px;
         @include respond-to(small) { 
             margin-left: 5px;
-            max-width: 70%;
+            max-width: 60%;
         }
     }
 }
@@ -125,7 +125,8 @@ md-card {
 
     &::-webkit-scrollbar-track
 	{
-		-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+        box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 		background-color: #F5F5F5;
 	}
 
