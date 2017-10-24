@@ -1,3 +1,5 @@
+@import './../../app.component.scss';
+
 .shop {
     display: flex;
     flex-wrap: wrap;
@@ -7,5 +9,9 @@
     * {
         width: calc(100% / 3 - 20px);
         padding: 10px;
+
+        @include respond-to(small) { 
+            width: calc(100% / 2 - 20px);
+        }
     }
 }
