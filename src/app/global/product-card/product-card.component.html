@@ -8,8 +8,8 @@
       <div class="product-desc">{{cart.name}}</div>
     </div>
     <div>
+      <div class="product-price">Rp {{cart.price | number:'1.0-0'}}</div>
       <button class="small-button" md-raised-button (click)="addToCart(cart)">Beli</button>
-      <div class="product-price">{{cart.price}}</div>
     </div>
   </div>
 </div>
